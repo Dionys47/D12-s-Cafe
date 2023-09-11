@@ -1,0 +1,29 @@
+f1 {
+	4 rows
+	2 cols
+}
+
+rez {
+	8 rows
+	5 cols
+}
+
+por {
+	8 rows
+	5 cols
+}
+
+m li {
+	2 rows
+	3 cols
+}
+
+men {
+	12 rows
+	5 cols
+}
+
+info {
+	2 rows
+	2 cols
+}

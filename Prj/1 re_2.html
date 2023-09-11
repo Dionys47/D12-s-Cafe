@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>
+            Fatura
+        </title>
+        <link rel = "stylesheet" type = "text/CSS" href = "the.css">
+        <script src = "the.js"></script>
+    </head>
+    <body class = "y">
+        <table border = "0" width = "100%" height = "100%" class = "z">
+            <tr>
+                <tr>
+                    <td colspan = "3"><a href = "1 re.html"><img src = "img/bt_prev.png"
+                        title = "Bëni një porosi tjetër" width = "130" height = "130"/></a></td>
+                </tr>
+                <td rowspan = "4" width = "30%"></td>
+                <td height = "30%"></td>
+                <td rowspan="4" width = "30%">
+                </td>
+            </tr>
+                <td align = "center" height = "10%" class = "x">
+                    <p class = "p">Rezultatet e Porosisë suaj!</p>
+                </td>
+            </tr>
+            </tr>
+            <tr>
+                <td align = "center" height = "20%" class="x">
+                    <p id = "po"></p>
+                    <p id = "mad"></p>
+                    <p id = "op"></p>
+                </td>
+            </tr>
+            <tr>
+                <td height = "30%"></td>
+            </tr>
+            <tr>
+                <td colspan = "3" align = "right">
+                    <a href = "prj.html"><img src = "img/bt_next.png" title = "Faqja e Parë" width = "130" height = "130"/></a>
+                </td>
+            </tr>
+        </table>
+        <script>
+            
+            var urlParams = new URLSearchParams(window.location.search);
+            var mad = urlParams.get('mad');
+            var po = urlParams.get('po');
+            var op = urlParams.get('op');
+        
+            var madElement = document.getElementById('mad');
+            var poElement = document.getElementById('po');
+            var opElement = document.getElementById('op');
+        
+            madElement.textContent = ", " + mad;
+            poElement.textContent = "Një " + po;
+            opElement.textContent = ", dhe me " + op;
+          </script>
+    </body>
+</html>

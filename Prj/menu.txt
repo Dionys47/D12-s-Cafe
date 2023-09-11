@@ -1,0 +1,58 @@
+Macchiato
+Espresso
+Americano
+Cappuccino
+Latte
+Hot Cider (per femije dhe te rritur)
+Caje pa kafein.
+Decaf Coffee
+Chicory
+Chai Tea (caj djeges)
+Kombucha
+Milkshake
+Smoothie
+Milk Steamers
+Matcha Tea
+Hot Chocolate
+Iced Tea
+Lemonade
+Arnold Palmer
+Italian Soda
+Fresh Juices
+Energy Drinks
+Beer
+Wine
+Sangria
+Horchata
+
+
+var selectedValue = document.querySelector('input[name="form"]:checked')  
+
+
+function checkButton() {    
+    var getSelectedValue = document.querySelector(   
+        'input[name="madhesia"]:checked');
+
+    if(getSelectedValue != null) {  
+            var m1 = getSelectedValue;
+    }   
+    else {   
+        document.getElementById("error").innerHTML   
+            = "madhesia nuk eshte zgjedhur"; 
+            
+    }
+    var getSelectedValue = document.querySelector(   
+        'input[name="porosia"]:checked');
+        
+    if(getSelectedValue != null) {   
+        var p0 = getSelectedValue;            
+    }   
+    else {   
+        document.getElementById("error").innerHTML   
+            = "porosia nuk eshte zgjedhur";   
+    }
+        
+    window.open("1 re_1.html");
+    
+
+}
